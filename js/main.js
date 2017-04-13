@@ -8,7 +8,6 @@ submitButton.addEventListener('click', function(){
   var value = inputField.value;
   var snack = document.getElementById(value);
   if(snack) {
-    snack.classList.add('purchased');
     purchases.appendChild(snack);
     message.textContent = 'Enjoy your ' + value;
   } else {
@@ -18,4 +17,21 @@ submitButton.addEventListener('click', function(){
 
 shake.addEventListener('click', function(){
   snackCollection.classList.toggle('shake');
+});
+
+snackCollection.addEventListener('click', function(event){
+  if(event.target.className == 'snack'){
+    var snack = event.target;
+    var snackName = snack.id;
+    inputField.value = snackName;
+    purchases.appendChild(snack);
+    message.textContent = 'Enjoy your ' + snackName;
+  }
+});
+
+purchases.addEventListener('click', function(event){
+  if(event.target.className == 'snack'){
+    var snack = event.target;
+    snack.remove()
+  };
 });
