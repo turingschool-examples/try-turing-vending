@@ -75,22 +75,18 @@ li {
 
 /* form styles */
 
-#snack-input,
-#snack-submit,
-#shake {
+#snack-input {
+  width: 100%;
   height: 50px;
-  font-size: 2em;;
-}
-
-#snack-input,
-#shake {
-  width: 100%;
+  font-size: 2em;
+  padding: 0px 10px;
 }
 
 #snack-submit,
 #shake {
   width: 100%;
-  margin: 20px 0;
+  font-size: 1em;
+  padding: 10px;
 }
 
 /*Custom CSS changes*/
