@@ -10,6 +10,7 @@ submitButton.addEventListener('click', function(event){
   var snack = document.getElementById(value);
   if(snack) {
     purchases.appendChild(snack);
+    message.textContent = 'Enjoy your ' + value;
   } else {
     message.textContent = 'Sorry! I am out of that!';
   }
