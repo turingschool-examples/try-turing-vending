@@ -47,7 +47,7 @@ li {
   border: 1px solid #333;
 }
 
-#feet {
+.feet {
   background: #666;
   width: 25px;
   height: 25px;
@@ -57,15 +57,20 @@ li {
   border-bottom: 5px solid #333;
 }
 
-#feet:last-of-type {
+.feet:last-of-type {
   right: -3px;
 }
 
 #flash-message {
+  overflow: hidden;
   height: 50px;
   background: #333;
   width: 300px;
   margin: auto;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  color: blanchedalmond;
 }
 
 /* form styles */
