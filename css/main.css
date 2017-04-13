@@ -2,3 +2,7 @@ li {
   min-width: 75px;
   min-height: 75px;
 }
+
+.purchased {
+  transform: rotate(10deg);
+}

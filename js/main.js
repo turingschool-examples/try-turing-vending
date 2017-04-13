@@ -9,6 +9,7 @@ submitButton.addEventListener('click', function(event){
   var value = inputField.value;
   var snack = document.getElementById(value);
   if(snack) {
+    snack.classList.add('purchased');
     purchases.appendChild(snack);
     message.textContent = 'Enjoy your ' + value;
   } else {
