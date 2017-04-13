@@ -1,3 +1,4 @@
-.hide {
-  display: none;
+li {
+  min-width: 75px;
+  min-height: 75px;
 }
